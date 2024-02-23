@@ -1,0 +1,15 @@
+#include "stm32f4xx.h"                  // Device header
+int main(void){
+	int i; //i is a number
+	i=1; //i is 1
+//i=0000 0000 0000 0000  0000 0000 0000 0001
+//i=0x0000 0000
+
+	i=i<<31; //scroll left 31 times
+//i=1000 0000 0000 0000  0000 0000 0000 0000
+//i=0x8000 0000
+
+	i=i>>30; //scoll right 30 times
+//i=1111 1111 1111 1111  1111 1111 1111 1110
+//i=0xFFFF FFFE
+}
