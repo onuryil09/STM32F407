@@ -8,3 +8,10 @@ int main(){
 	c=a^b;  //XOR gate
 	c=~a;  //NOT gate
 }	
+/*Well we oparate a,b hex numbers. Microcontroller can calculate some gates
+and we using it. (0x3C=0011 1100) (0X5A=0101 1010)
+a&b=0x18
+a|b=0x7E
+a^b=0x66
+~a=0xC3
+*/
