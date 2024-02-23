@@ -1,0 +1,10 @@
+#include "stm32f4xx.h"                  // Device header
+int main(){
+	int a,b,c;
+	a=0x3C;
+	b=0x5A;	
+	c=a&b;  //AND gate
+	c=a|b;  //OR gate
+	c=a^b;  //XOR gate
+	c=~a;  //NOT gate
+}	
