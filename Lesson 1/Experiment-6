@@ -1,0 +1,4 @@
+int main(){
+  while(!(a&(1<<n)));
+}
+// when you press button processor wait to pull back to button and continue.
