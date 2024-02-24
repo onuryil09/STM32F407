@@ -1,4 +1,4 @@
-//if
+//if functions
 int main(){
  int a,b,c;
  a=5;
