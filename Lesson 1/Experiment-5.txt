@@ -8,4 +8,5 @@ int main(void){
 	}
 }
 /* number 981 first bit if equal 1, b parameter is 1
+a=0000 0000 0000 0000  0000 0011 1101 0101
    else b parameter will be 0 */
