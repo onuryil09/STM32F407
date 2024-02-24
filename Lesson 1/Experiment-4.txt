@@ -1,0 +1,25 @@
+//if
+int main(){
+ int a,b,c;
+ a=5;
+ b=3+(a==5); //b=8
+
+ a=3;
+ b=3+(a==5);//b=3
+
+ a=0;
+ if(a==5){ b=1;} //b=3
+
+ if(1){ c=120;} //c=120
+ if(0){ c=110;} //!!! (c=120) !!! its not write wrong
+ if(15){ c=55;} //c=55
+ if(-15){ c=96;} //c=96
+
+/* here we try to say when if command accept and opareta.
+
+when command came [true(not zero)] to if, it starts the operation 
+came command be like any number accept 0(zero)!
+
+if came 0 it will not work.
+
+we can use this addition or other operation.*/
