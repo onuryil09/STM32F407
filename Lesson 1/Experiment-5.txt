@@ -1,3 +1,4 @@
+//Bit Test
 int main(void){
 	int a,b;
 	a=981;
