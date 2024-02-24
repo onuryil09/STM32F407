@@ -1,0 +1,23 @@
+int main(void){
+	unsigned int a;
+	a=981;
+	
+	a=a|(1<<5);
+	a=a&~(1<<6);
+	a=a^(1<<9);
+}
+
+/*unsigned int a; the last bit does not fonction to indicate negative 
+_000 0000 0000 0000  0000 0000 0000 0000= 0x?000 0000
+
+ First operation is a=a|(1<<5); 
+	it means set the 5th bit of 32 bits to 1
+
+ second opartion is a=a&~(1<<6);
+	it means set the 6th bit of 32 bits to 0
+
+ Third opariton is a=^(1<<9);
+	it means change the 9th bit opposite
+	like if 9th bit is a 0 change to 1
+	or if 9th bit is a 1 change to 0
+*/
