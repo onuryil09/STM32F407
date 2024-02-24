@@ -1,3 +1,5 @@
+//Set Bit, Clear bit, Change bit
+
 int main(void){
 	unsigned int a;
 	a=981;
