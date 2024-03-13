@@ -14,7 +14,7 @@ int main(void){
 //i=0xFFFF FFFE
 }
 /*stm32f4 discory card we use and we have a trick, stm32f4 have 32 bit binary information. 
-the trick is first bit is a not using for info, its using for specifying negative number if is 1 like if you have 
+the trick is 32th bit is a not using for info, its using for specifying negative number if is 1 like if you have 
 
 1000 0000 0000 0000 0000 0000 0000 0010 
 it means decimal -2 
