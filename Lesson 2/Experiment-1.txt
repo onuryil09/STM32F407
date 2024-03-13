@@ -1,0 +1,28 @@
+//Hello! we are continue lesson2.
+//Fun fect ""volatile"" is a master in code hehe...
+//if ARM Complier is a version 6, THAT mean unnecessary code going to
+//put it out.
+//WHY? like wait command are sometimes not usefull and complier version 6
+//not add the code them
+//but if we need the them we could use "volatile int ..." 
+//and there is no problem at all
+//or you could just use version 5
+
+#include "Board_LED.h"			//:Board Support:LED
+
+int main(void)
+{
+	volatile int i;
+	LED_Initialize();
+	
+	while(1)			//for ever loop
+	{					
+		LED_On(0);
+		for(i=0;i<1000000;i++);
+		LED_Off(0);
+		for(i=0;i<1000000;i++);
+	}
+}
+
+
+//STM32 board flashing light example

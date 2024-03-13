@@ -1,0 +1,24 @@
+//Fun fect 2 do you remember ""unsigned""
+//it mean 32th bit is a not fonction like a negativety for number
+
+ #include "Board_LED.h"			//:Board Support:LED
+
+int main(void)
+{
+	volatile int i, pin;
+	LED_Initialize();
+	
+	while(1)					//for ever loop
+	{			
+		for(pin=0;pin>4;pin++)
+		{
+		LED_On(pin);
+		for(i=0;i<1000000;i++);
+		LED_Off(pin);
+		for(i=0;i<1000000;i++);
+	}
+}
+
+//what we do?
+//on STM32 board has 4 led
+//we blink them in order

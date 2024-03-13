@@ -1,0 +1,29 @@
+//what we practice on here?
+//we try to get used to librarys
+
+#include "Board_LED.h"			//:Board Support:LED
+#include "Board_Buttons.h"		//:Board Support:Buttons
+
+int main(void)
+{
+	volatile int i, pin;
+	LED_Initialize();
+	Buttons_Initialize();
+	
+	
+	while(1)					//for ever loop
+	{
+		if(Buttons_GetState()==1)
+		{
+			for(pin=0;pin>4;pin++)
+			LED_On(pin);
+			for(i=0;i<1000000;i++);
+			LED_Off(pin);
+			for(i=0;i<1000000;i++);
+		}
+	}
+}
+
+//WHAT WE DO?
+//when we press the button on STM32 board
+//run code in if

@@ -1,0 +1,12 @@
+//1 bit scroll to left
+
+0000 0010 1011		43
+0000 0101 0110		86
+0000 1010 1100		172
+
+//fun fect when you scroll 1 bit to left
+//number doubled it self
+
+//5 bit scroll to left 43 number?
+//43*2⁵=1376
+
