@@ -13,7 +13,8 @@ int main(void){
 //i=1111 1111 1111 1111  1111 1111 1111 1110
 //i=0xFFFF FFFE
 }
-/*stm32f4 discory card we use and we have a trick, stm32f4 have 32 bit binary information. the trick is first bit is a
-not using for info, its using for specifying negative number if is 1 like if you have 1000 0000 0000 0000 0000 0000 
-0000 0010 it means decimal -2 not a decimal 2147483650 number (0x8000 0002) but machine show you like 0x8000 0002 
+/*stm32f4 discory card we use and we have a trick, stm32f4 have 32 bit binary information. 
+the trick is first bit is a not using for info, its using for specifying negative number if is 1 like if you have 1000 0000 0000 0000 0000 0000 0000 0010 
+it means decimal -2 not a decimal 2147483650 number (0x8000 0002) 
+but machine show you like 0x8000 0002 
 ofcourse you will chance this your according to you plan in future.*/
