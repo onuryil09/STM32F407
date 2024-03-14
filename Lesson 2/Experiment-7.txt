@@ -1,0 +1,14 @@
+/*Fun fact hehe
+we learned gate opertions with binary
+
+like */
+
+int main(void)
+{	
+	unsigned int a;
+	a=981;
+	a=a | (1<<5);
+	a=a | (1U<<5);
+}
+
+//in here "U" is mean to unsigned. that is all
