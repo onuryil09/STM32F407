@@ -1,0 +1,13 @@
+int main(void)
+{
+	int adresteki_veri;
+	adresteki_veri = *((int*)0x40023830);
+}	
+
+//What we do?
+//we want specific area in memory
+//(int*)0x40023830 it mean this info is a adress way now (chance the number to pointer)
+//*((int*)0x40023830) it mean take info in the adress 
+
+//adresteki_veri = *((int*)0x40023830) it means 
+//adresteki_veri = info

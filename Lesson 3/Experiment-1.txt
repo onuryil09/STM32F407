@@ -1,0 +1,13 @@
+#define PI 3.141
+
+int main(void)
+{	
+	double yaricap, alan;
+	yaricap=5;
+	alan=PI*yaricap*yaricap;
+}
+
+//in big codes we use mark identification(makro tanımlama)
+//define works like
+//when code debug
+//debug is changing code when it see PI in here

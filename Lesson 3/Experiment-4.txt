@@ -1,0 +1,32 @@
+#define POS (12U)
+#define MASK (0X3U << POS)
+#define MASK_0 (1U << 12U)
+#define MASK_1 (0X2U << POS)
+
+int main(void)
+{
+	unsigned int a=0x12AF04BA;
+	a = a | MASK;
+	a = a & ~MASK;
+	a = a | MASK_0;
+	a = a | MASK_1;
+}
+
+
+//CALCULATE BY WİNDOWS Calculater and to compare keil 5
+// MASK (0X3U << POS) = 0011 0000 0000 0000	= 0x3000
+// MASK_0 (1U << 12U) = 0001 0000 0000 0000	= 0x1000
+// MASK_1 (0X2U << POS) = 0010 0000 0000 0000 	= 0x2000
+
+
+/*int main(void)
+{
+	unsigned int a=0x12AF04BA; 	//a=0x12AF 04BA
+	a = a | MASK;			//a=0x12AF 34BA
+	a = a & ~MASK;			//a=0x12AF 04BA
+	a = a | MASK_0;			//a=0X12AF 14BA
+	a = a | MASK_1;			//a=0x12AF 34BA
+}
+*/
+
+//Calculated perfectly, answers are true...

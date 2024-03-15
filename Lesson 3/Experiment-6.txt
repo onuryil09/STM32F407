@@ -1,0 +1,19 @@
+int main(void)
+{
+	double a=10.3;
+	double tam, ondalik;
+	tam=(int)a;
+	ondalik = a-tam;
+}
+//What we do?
+//get only decimal
+
+//	tam=(int)a; //a is not a integer
+//a is a decimal number
+//but i want integer(int) part
+
+//even tam is define a decimal
+//tam will equal 10
+
+//now we get only decimal part
+//ondalik = a-tam;

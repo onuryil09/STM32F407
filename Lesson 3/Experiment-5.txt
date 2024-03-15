@@ -1,0 +1,27 @@
+int main(void)
+{
+	int a=10, b=20;
+	int *p;
+	p=&a;
+	*p = *p + 10;
+	p=&b;
+	*p = *p + 10;
+}
+
+//What we learning?
+//Pointer
+
+// ? = *p = ?
+// *p is a pointer. 
+//Little not: i can only assign addresses to pointers
+//Küçük not: işaretçilere sadece adres atayabilirim
+
+//How its work?
+//in my keil 5
+//a is registered 0x20000658 adress
+//0x20000658 and in this adress have a info 0xA (10)
+//p=0x20000658
+//*p=0x0000000A
+
+//After add opration
+//*0x20000658=20
