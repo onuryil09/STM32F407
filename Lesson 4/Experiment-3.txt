@@ -1,0 +1,11 @@
+#define RCC_ABH1ENR (*((int*) 0x00001000))
+int main()
+{	
+	RCC_ABH1ENR = 10;
+	RCC_ABH1ENR |= 1<<1;
+}
+
+//What we do?
+//RCC_ABH1ENR is a adress way
+//	RCC_ABH1ENR = 10;
+//RCC_ABH1ENR adress way in have a info

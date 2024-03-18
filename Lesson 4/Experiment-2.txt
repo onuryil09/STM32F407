@@ -1,0 +1,12 @@
+#define RCC_ABH1ENR (*((int*) 0x40023830))
+
+int main(void)
+{
+	int adresteki_veri;
+	adresteki_veri = RCC_ABH1ENR;
+}
+
+//What we do?
+//RCC_ABH1ENR is a adress way name
+//	int a; 
+//a=(is what in the RCC_ABH1ENR)

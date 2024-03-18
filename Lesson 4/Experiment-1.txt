@@ -1,0 +1,7 @@
+//conversion of integer to pointer
+
+int main(void)
+{
+	int adresteki_veri;
+	adresteki_veri = *((int*) 0x40023830);
+}

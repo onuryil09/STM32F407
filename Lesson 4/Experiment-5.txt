@@ -1,0 +1,35 @@
+#include <string.h>
+struct calisan
+{
+	char isim[30];
+	float maas;
+	int sicil;
+};
+
+int main(void)
+{	
+	struct calisan calisan1, *p;
+	calisan1.maas=10000;
+	calisan1.sicil=150;
+	strcpy(calisan1.isim,"isim soyisim");
+
+	
+	p=&calisan1;
+	(*p).maas=11000;
+	(*p).sicil=151;
+	strcpy((*p).isim,"isim soyisim1");
+	
+	p->maas=12000;
+	p->sicil=152;
+	strcpy(p->isim,"isim2 soyisim2");
+}
+
+//What is it?
+//we can define array so many subsets on calisan
+//that can add calisan1 or p or worker2 and so many however you want
+
+//What we show?
+//this experiment same as experiment-4
+//you can write (define) 3 differnt ways(method)
+//they are all same
+	

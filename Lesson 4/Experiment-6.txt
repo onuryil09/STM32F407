@@ -1,0 +1,15 @@
+//tür tanımlama
+
+#include <string.h>
+
+typedef unsigned char BOOL;
+
+int main(void)
+{
+	BOOL x;
+	x=1;
+	x=0;
+}
+
+//What is it?
+//we define x can be only 1 or 0

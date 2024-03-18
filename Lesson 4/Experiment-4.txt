@@ -1,0 +1,38 @@
+#include <string.h>
+struct calisan
+{
+	char isim[30];
+	float maas;
+	int sicil;
+};
+
+int main(void)
+{	
+	struct calisan calisan1;
+	calisan1.maas=10000;
+	calisan1.sicil=150;
+	strcpy(calisan1.isim,"isim soyisim");
+}
+
+//#include <string.h> give us to use strcpy.
+//[calisan1.isim="isim soyisim";] = [strcpy(calisan1.isim, "isim soyisim");]
+//we will not use left side for name data.
+
+//What we do?
+//we defining an array named calisan
+
+//in this array we have
+//30 charcters (letters) long write name
+//float payment
+//registration number (int)
+
+//What is calisan1??
+// calisan subset is calisan1
+//calisan1 have name[30],payment,reg number
+//calisan1 isim[30],maas,sicil numarası bulundurmaktadır
+
+//What program will do?
+//we told it to do calisan1 payment is 10000 (record it)
+//calisan1 registration number is 150
+//calisan1 name is isim soyisim
+
